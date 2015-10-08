@@ -93,6 +93,99 @@ app.get('/team/jdoe', (req, res) => {
   }
 });
 
+app.get('/team/jdoe', (req, res) => {
+  // TODO
+  var result = team.one('jdoe');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+app.get('/team/ktfarr', (req, res) => {
+  // TODO
+  var result = team.one('ktfarr');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+app.get('/team/nefuller', (req, res) => {
+  // TODO
+  var result = team.one('nefuller');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+app.get('/team/cogiang', (req, res) => {
+  // TODO
+  var result = team.one('cogiang');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+app.get('/team/dlazier', (req, res) => {
+  // TODO
+  var result = team.one('dlazier');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+app.get('/team/abradley', (req, res) => {
+  // TODO
+  var result = team.one('abradley');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+app.get('/team/zhili', (req, res) => {
+  // TODO
+  var result = team.one('zhili');
+  if (!result.success) {
+    notFound404(req, res);
+  } else {
+    res.render('team', {
+      members: result.data,
+      pageTestScript: '/qa/tests-team.js'
+    });
+  }
+});
+
+
+
 //////////////////////////////////////////////////////////////////////
 ///// Error Middleware ///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
